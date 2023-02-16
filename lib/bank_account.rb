@@ -10,11 +10,11 @@ class BankAccount
   end
 
   def deposit(amount)
-    @balance = amount + @balance
+    @balance = amount - @balance
   end
 
   def withdraw(amount)
-
+    @balance + amount
   end
 
   def verify?(id, pin)
